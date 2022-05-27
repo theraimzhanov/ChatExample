@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity2">
+
+    <TextView
+        android:id="@+id/txtLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="28sp"
+        android:text="Create new contact"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tillContactName"
+        android:layout_margin="8dp"
+        app:layout_constraintTop_toBottomOf="@id/txtLabel"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextContactName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Contact name"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tillLastMessage"
+        android:layout_margin="8dp"
+        app:layout_constraintTop_toBottomOf="@id/tillContactName"
+        app:layout_constraintRight_toRightOf="@id/tillContactName"
+        app:layout_constraintLeft_toLeftOf="@id/tillContactName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextLastMessage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Last message"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilLastTimeOfMessage"
+        android:layout_margin="8dp"
+        app:layout_constraintTop_toBottomOf="@id/tillLastMessage"
+        app:layout_constraintRight_toRightOf="@id/tillLastMessage"
+        app:layout_constraintLeft_toLeftOf="@id/tillLastMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextLastTimeOfMessage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="datetime"
+            android:hint="Last time"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilImageForContact"
+        android:padding="12dp"
+        android:layout_margin="8dp"
+        android:background="#75958F"
+        app:layout_constraintTop_toBottomOf="@id/tilLastTimeOfMessage"
+        app:layout_constraintRight_toRightOf="@id/tilLastTimeOfMessage"
+        app:layout_constraintLeft_toLeftOf="@id/tilLastTimeOfMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textViewUpLoadImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Get image"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilButtonBack"
+        android:padding="12dp"
+        android:layout_margin="8dp"
+        android:background="#ED200A"
+        app:layout_constraintTop_toBottomOf="@id/tilImageForContact"
+        app:layout_constraintRight_toRightOf="@id/tilImageForContact"
+        app:layout_constraintLeft_toLeftOf="@id/tilImageForContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Create chat"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
